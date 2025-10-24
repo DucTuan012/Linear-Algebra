@@ -1,0 +1,42 @@
+# Tên của quy trình tự động hóa
+name: Build LaTeX PDF
+
+# 1. KÍCH HOẠT KHI NÀO?
+on:
+  # Chạy khi có lệnh 'push'
+  push:
+    # Chỉ chạy khi push lên nhánh 'main'
+    branches: [ "main" ]
+
+# 2. LÀM GÌ?
+jobs:
+  # Tên của "job" (bạn có thể đặt tùy ý)
+  build_latex:
+    # Chạy trên hệ điều hành nào? (Ubuntu mới nhất là tiêu chuẩn)
+    runs-on: ubuntu-latest
+
+    # Các bước thực hiện
+    steps:
+      # Bước 1: Tải code từ kho GitHub của bạn về máy chủ ảo
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      # Bước 2: Biên dịch LaTeX
+      - name: Compile LaTeX document
+        # Sử dụng một "Action" có sẵn của cộng đồng để cài TeX Live
+        uses: xu-cheng/latex-action@v3
+        with:
+          # Nói cho nó biết file .tex "gốc" của bạn tên là gì
+          root_file: main.tex
+          # Bạn muốn dùng trình biên dịch nào
+          compiler: pdflatex
+
+      # Bước 3: Lưu file PDF đã biên dịch
+      - name: Upload PDF artifact
+        # Sử dụng Action có sẵn để tải file lên
+        uses: actions/upload-artifact@v4
+        with:
+          # Tên của file zip sẽ được lưu trữ
+          name: Ghi-chu-Dai-so-Tuyen-tinh-PDF
+          # File nào cần lưu? (chính là file vừa được biên dịch)
+          path: main.pdf
