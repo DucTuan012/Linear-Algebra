@@ -1,0 +1,38 @@
+% =========================================================
+% TÊN FILE: main.tex
+% CHỨC NĂNG: File chính để biên dịch
+% =========================================================
+
+% Khai báo kiểu tài liệu: dùng 'book' cho tài liệu lớn, 12pt chữ, khổ A4
+\documentclass[12pt, a4paper, oneside]{book}
+
+% Gọi tất cả các thiết lập từ file preamble
+\input{preamble.tex}
+
+% --- Thông tin tài liệu (cho trang bìa) ---
+\title{Ghi chú Đại số Tuyến tính \\ \large Dành cho Sinh viên Nghiên cứu Chuyên sâu}
+\author{Tên của Bạn (Your Name)}
+\date{\today}
+
+% --- Bắt đầu tài liệu ---
+\begin{document}
+
+% --- PHẦN MỞ ĐẦU ---
+\frontmatter 
+\maketitle   % Tạo trang bìa
+\tableofcontents % Tự động tạo mục lục
+
+% --- PHẦN NỘI DUNG CHÍNH ---
+\mainmatter 
+
+% GỌI NỘI DUNG CHƯƠNG 1 VÀO:
+\chapter{Không gian Vector và Không gian con}
+\input{chapters/chuong_01_KhongGianVector.tex}
+
+% GỌI NỘI DUNG CHƯƠNG 2 VÀO (khi bạn đã viết xong file chuong_02.tex):
+%\chapter{Ánh xạ Tuyến tính và Ma trận}
+%\input{chapters/chuong_02_AnhXaTuyenTinh.tex}
+
+
+% --- KẾT THÚC TÀI LIỆU ---
+\end{document}
