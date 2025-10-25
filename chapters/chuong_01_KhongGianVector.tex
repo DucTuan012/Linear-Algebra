@@ -1,1 +1,44 @@
-chuong_01_KhongGianVector.tex
+% =========================================================
+% TÊN FILE: chapters/chuong_01_KhongGianVector.tex
+% =========================================================
+
+\section{Định nghĩa Không gian Vector}
+
+\begin{dinhnghia}[K.G. Vector]
+Một không gian vector $V$ trên trường $\mathbb{F}$ là một tập hợp các đối tượng được gọi là vector, cùng với hai phép toán là Phép cộng Vector và Phép nhân Vô hướng, thỏa mãn 8 tiên đề sau:
+\begin{enumerate}
+    \item Tính kết hợp: $(\mathbf{u} + \mathbf{v}) + \mathbf{w} = \mathbf{u} + (\mathbf{v} + \mathbf{w})$.
+    \item Phần tử trung hòa: Tồn tại vector không $\mathbf{0} \in V$ sao cho $\mathbf{u} + \mathbf{0} = \mathbf{u}$.
+    % ... (bổ sung các tiên đề còn lại)
+\end{enumerate}
+\end{dinhnghia}
+
+\begin{vidu}[Không gian Vector $\mathbb{R}^n$]
+Tập hợp $\mathbb{R}^n$ là một không gian vector trên trường số thực $\mathbb{R}$ với các phép toán thông thường.
+\end{vidu}
+
+\begin{note}
+\textbf{Vector không} luôn là vector duy nhất trong một không gian vector. Trong $\mathbb{R}^n$, $\mathbf{0}$ là vector $(\underbrace{0, 0, \dots, 0}_{n})$.
+\end{note}
+
+\section{Không gian con}
+
+\begin{dinhly}[Điều kiện Không gian con]
+Một tập con $W \subset V$ là một không gian con của $V$ nếu và chỉ nếu:
+\begin{enumerate}
+    \item $W$ không rỗng (chứa vector không $\mathbf{0}$).
+    \item $W$ đóng với phép cộng vector.
+    \item $W$ đóng với phép nhân vô hướng.
+\end{enumerate}
+\end{dinhly}
+
+\begin{warning}
+\textbf{Luôn kiểm tra} điều kiện $\mathbf{0} \in W$ trước tiên. Đây là cách nhanh nhất để loại trừ một tập hợp không phải là không gian con.
+\end{warning}
+
+\begin{summary}
+\begin{itemize}
+    \item Cốt lõi của Đại số Tuyến tính là cấu trúc $\mathbf{V}$ và các vector $\mathbf{u}, \mathbf{v}$.
+    \item Điều kiện để một tập con là Không gian con.
+\end{itemize}
+\end{summary}
