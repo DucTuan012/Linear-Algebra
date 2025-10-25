@@ -1,44 +1,69 @@
 % =========================================================
 % TÊN FILE: chapters/chuong_01_KhongGianVector.tex
+% NỘI DUNG: Định nghĩa Định thức qua Hoán vị
 % =========================================================
 
-\section{Định nghĩa Không gian Vector}
+\chapter{Định thức của Ma trận Vuông}
+\label{chuong:dinhthuc}
 
-\begin{dinhnghia}[K.G. Vector]
-Một không gian vector $V$ trên trường $\mathbb{F}$ là một tập hợp các đối tượng được gọi là vector, cùng với hai phép toán là Phép cộng Vector và Phép nhân Vô hướng, thỏa mãn 8 tiên đề sau:
-\begin{enumerate}
-    \item Tính kết hợp: $(\mathbf{u} + \mathbf{v}) + \mathbf{w} = \mathbf{u} + (\mathbf{v} + \mathbf{w})$.
-    \item Phần tử trung hòa: Tồn tại vector không $\mathbf{0} \in V$ sao cho $\mathbf{u} + \mathbf{0} = \mathbf{u}$.
-% ... (bổ sung các tiên đề còn lại)
-\end{enumerate}
+\section{Định nghĩa bằng Hoán vị}
+
+Đây là định nghĩa chính tắc và tổng quát nhất của định thức, thường được sử dụng trong các chứng minh lý thuyết.
+
+\begin{dinhnghia}[Định thức (Định nghĩa Leibniz)]
+Cho một ma trận vuông $A$ cấp $n \times n$, với $A = [a_{ij}]$. Định thức của $A$, ký hiệu là $\det(A)$ hoặc $|A|$, được định nghĩa như sau:
+
+\begin{equation}
+\label{eq:det_leibniz}
+\det(A) = \sum_{\sigma \in S_n} \text{sgn}(\sigma) \prod_{i=1}^n a_{i, \sigma(i)}
+\end{equation}
+
+Trong đó:
+\begin{itemize}
+    \item $S_n$ là tập hợp tất cả các hoán vị của $n$ phần tử $\{1, 2, \dots, n\}$. Tập hợp này có $n!$ (n giai thừa) phần tử.
+    \item $\sigma$ là một hoán vị cụ thể trong $S_n$. $\sigma(i)$ là giá trị của phần tử thứ $i$ sau khi hoán vị.
+    \item $\text{sgn}(\sigma)$ là \textbf{dấu (sign)} của hoán vị $\sigma$. Nó bằng $+1$ nếu $\sigma$ là hoán vị chẵn (có thể biểu diễn bằng một số chẵn lần đổi chỗ), và bằng $-1$ nếu $\sigma$ là hoán vị lẻ.
+\end{itemize}
 \end{dinhnghia}
 
-\begin{vidu}[Không gian Vector $\mathbb{R}^n$]
-Tập hợp $\mathbb{R}^n$ là một không gian vector trên trường số thực $\mathbb{R}$ với các phép toán thông thường.
-\end{vidu}
-
 \begin{note}
-\textbf{Vector không} luôn là vector duy nhất trong một không gian vector. Trong $\mathbb{R}^n$, $\mathbf{0}$ là vector $(\underbrace{0, 0, \dots, 0}_{n})$.
+Nói một cách dễ hiểu: Định thức là tổng của $n!$ số hạng. Mỗi số hạng là tích của $n$ phần tử của ma trận (mỗi hàng và mỗi cột chỉ được lấy đúng một lần), nhân với dấu $(+1)$ hoặc $(-1)$ tùy thuộc vào hoán vị của các chỉ số cột.
 \end{note}
 
-\section{Không gian con}
+\section{Ví dụ Minh họa Định nghĩa}
 
-\begin{dinhly}[Điều kiện Không gian con]
-Một tập con $W \subset V$ là một không gian con của $V$ nếu và chỉ nếu:
+\begin{vidu}[Trường hợp $n=2$]
+Cho ma trận $A = \begin{pmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{pmatrix}$.
+Tập hoán vị $S_2$ có $2! = 2$ phần tử:
 \begin{enumerate}
-    \item $W$ không rỗng (chứa vector không $\mathbf{0}$).
-    \item $W$ đóng với phép cộng vector.
-    \item $W$ đóng với phép nhân vô hướng.
+    \item $\sigma_1 = (1, 2)$ (hoán vị đồng nhất): chẵn, $\text{sgn}(\sigma_1) = +1$.
+    \item $\sigma_2 = (2, 1)$ (đổi chỗ 1 và 2): lẻ, $\text{sgn}(\sigma_2) = -1$.
 \end{enumerate}
-\end{dinhly}
+Áp dụng công thức (\ref{eq:det_leibniz}):
+\begin{align*}
+\det(A) &= \text{sgn}(\sigma_1) a_{1, \sigma_1(1)} a_{2, \sigma_1(2)} + \text{sgn}(\sigma_2) a_{1, \sigma_2(1)} a_{2, \sigma_2(2)} \\
+&= (+1) a_{11} a_{22} + (-1) a_{12} a_{21} \\
+&= a_{11}a_{22} - a_{12}a_{21}
+\end{align*}
+Đây chính là công thức định thức cấp 2 quen thuộc.
+\end{vidu}
 
-\begin{warning}
-\textbf{Luôn kiểm tra} điều kiện $\mathbf{0} \in W$ trước tiên. Đây là cách nhanh nhất để loại trừ một tập hợp không phải là không gian con.
-\end{warning}
+\begin{vidu}[Trường hợp $n=3$ (Quy tắc Sarrus)]
+Tập $S_3$ có $3! = 6$ hoán vị:
 
-\begin{summary}
+\textbf{Các hoán vị chẵn ($\text{sgn} = +1$):}
 \begin{itemize}
-    \item Cốt lõi của Đại số Tuyến tính là cấu trúc $\mathbf{V}$ và các vector $\mathbf{u}, \mathbf{v}$.
-    \item Điều kiện để một tập con là Không gian con.
+    \item $\sigma = (1, 2, 3)$ (đồng nhất) $\to +a_{11}a_{22}a_{33}$
+    \item $\sigma = (2, 3, 1)$ (dịch vòng) $\to +a_{12}a_{23}a_{31}$
+    \item $\sigma = (3, 1, 2)$ (dịch vòng) $\to +a_{13}a_{21}a_{32}$
 \end{itemize}
-\end{summary}
+
+\textbf{Các hoán vị lẻ ($\text{sgn} = -1$):}
+\begin{itemize}
+    \item $\sigma = (1, 3, 2)$ (đổi chỗ 2, 3) $\to -a_{11}a_{23}a_{32}$
+    \item $\sigma = (2, 1, 3)$ (đổi chỗ 1, 2) $\to -a_{12}a_{21}a_{33}$
+    \item $\sigma = (3, 2, 1)$ (đổi chỗ 1, 3) $\to -a_{13}a_{22}a_{31}$
+\end{itemize}
+
+Tổng của 6 số hạng này chính là công thức khai triển Sarrus cho định thức cấp 3.
+\end{vidu}
