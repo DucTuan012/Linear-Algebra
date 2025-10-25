@@ -1,69 +1,22 @@
 % =========================================================
-% TÊN FILE: chapters/chuong_01_KhongGianVector.tex
-% NỘI DUNG: Định nghĩa Định thức qua Hoán vị
+% CHUONG 1 TỐI GIẢN (Để kiểm tra)
 % =========================================================
 
-\chapter{Định thức của Ma trận Vuông}
-\label{chuong:dinhthuc}
+\chapter{Chương 1: Kiểm tra Biên dịch}
 
-\section{Định nghĩa bằng Hoán vị}
+\section{Đây là một mục kiểm tra}
 
-Đây là định nghĩa chính tắc và tổng quát nhất của định thức, thường được sử dụng trong các chứng minh lý thuyết.
+Nội dung này được viết để kiểm tra xem GitHub Actions
+có chạy được hay không. Nó không chứa bất kỳ 
+ky tu Unicode, emoji, hay dau cach la nao.
 
-\begin{dinhnghia}[Định thức (Định nghĩa Leibniz)]
-Cho một ma trận vuông $A$ cấp $n \times n$, với $A = [a_{ij}]$. Định thức của $A$, ký hiệu là $\det(A)$ hoặc $|A|$, được định nghĩa như sau:
-
-\begin{equation}
-\label{eq:det_leibniz}
-\det(A) = \sum_{\sigma \in S_n} \text{sgn}(\sigma) \prod_{i=1}^n a_{i, \sigma(i)}
-\end{equation}
-
-Trong đó:
-\begin{itemize}
-    \item $S_n$ là tập hợp tất cả các hoán vị của $n$ phần tử $\{1, 2, \dots, n\}$. Tập hợp này có $n!$ (n giai thừa) phần tử.
-    \item $\sigma$ là một hoán vị cụ thể trong $S_n$. $\sigma(i)$ là giá trị của phần tử thứ $i$ sau khi hoán vị.
-    \item $\text{sgn}(\sigma)$ là \textbf{dấu (sign)} của hoán vị $\sigma$. Nó bằng $+1$ nếu $\sigma$ là hoán vị chẵn (có thể biểu diễn bằng một số chẵn lần đổi chỗ), và bằng $-1$ nếu $\sigma$ là hoán vị lẻ.
-\end{itemize}
+\begin{dinhnghia}
+Đây là một định nghĩa thử nghiệm.
 \end{dinhnghia}
 
-\begin{note}
-Nói một cách dễ hiểu: Định thức là tổng của $n!$ số hạng. Mỗi số hạng là tích của $n$ phần tử của ma trận (mỗi hàng và mỗi cột chỉ được lấy đúng một lần), nhân với dấu $(+1)$ hoặc $(-1)$ tùy thuộc vào hoán vị của các chỉ số cột.
-\end{note}
+Đây là một công thức toán học cơ bản:
+\[
+A = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}
+\]
 
-\section{Ví dụ Minh họa Định nghĩa}
-
-\begin{vidu}[Trường hợp $n=2$]
-Cho ma trận $A = \begin{pmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{pmatrix}$.
-Tập hoán vị $S_2$ có $2! = 2$ phần tử:
-\begin{enumerate}
-    \item $\sigma_1 = (1, 2)$ (hoán vị đồng nhất): chẵn, $\text{sgn}(\sigma_1) = +1$.
-    \item $\sigma_2 = (2, 1)$ (đổi chỗ 1 và 2): lẻ, $\text{sgn}(\sigma_2) = -1$.
-\end{enumerate}
-Áp dụng công thức (\ref{eq:det_leibniz}):
-\begin{align*}
-\det(A) &= \text{sgn}(\sigma_1) a_{1, \sigma_1(1)} a_{2, \sigma_1(2)} + \text{sgn}(\sigma_2) a_{1, \sigma_2(1)} a_{2, \sigma_2(2)} \\
-&= (+1) a_{11} a_{22} + (-1) a_{12} a_{21} \\
-&= a_{11}a_{22} - a_{12}a_{21}
-\end{align*}
-Đây chính là công thức định thức cấp 2 quen thuộc.
-\end{vidu}
-
-\begin{vidu}[Trường hợp $n=3$ (Quy tắc Sarrus)]
-Tập $S_3$ có $3! = 6$ hoán vị:
-
-\textbf{Các hoán vị chẵn ($\text{sgn} = +1$):}
-\begin{itemize}
-    \item $\sigma = (1, 2, 3)$ (đồng nhất) $\to +a_{11}a_{22}a_{33}$
-    \item $\sigma = (2, 3, 1)$ (dịch vòng) $\to +a_{12}a_{23}a_{31}$
-    \item $\sigma = (3, 1, 2)$ (dịch vòng) $\to +a_{13}a_{21}a_{32}$
-\end{itemize}
-
-\textbf{Các hoán vị lẻ ($\text{sgn} = -1$):}
-\begin{itemize}
-    \item $\sigma = (1, 3, 2)$ (đổi chỗ 2, 3) $\to -a_{11}a_{23}a_{32}$
-    \item $\sigma = (2, 1, 3)$ (đổi chỗ 1, 2) $\to -a_{12}a_{21}a_{33}$
-    \item $\sigma = (3, 2, 1)$ (đổi chỗ 1, 3) $\to -a_{13}a_{22}a_{31}$
-\end{itemize}
-
-Tổng của 6 số hạng này chính là công thức khai triển Sarrus cho định thức cấp 3.
-\end{vidu}
+Kết thúc kiểm tra.

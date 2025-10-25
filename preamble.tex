@@ -1,86 +1,18 @@
 % =========================================================
-% TÊN FILE: preamble.tex
-% CHỨC NĂNG: Chứa tất cả các gói (packages) và định nghĩa môi trường
+% PREAMBLE TỐI GIẢN (Để kiểm tra)
 % =========================================================
-
-% --- Cài đặt cơ bản ---
-% Bạn sẽ dùng lệnh \documentclass ở file main.tex
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[vietnamese]{babel} % Hỗ trợ tiếng Việt
+\usepackage[vietnamese]{babel} 
 
-% --- Gói Toán học (Rất cần thiết) ---
+% Goi cac goi toan co ban
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsfonts}
-\usepackage{mathtools}       % Bổ sung cho amsmath
 
-% --- Gói Định lý & Môi trường Khoa học ---
-\usepackage{amsthm}          % Gói để tạo các môi trường Định lý, Định nghĩa
-\usepackage{thmtools}        % Tùy biến thêm cho amsthm
+% Goi goi dinh ly co ban
+\usepackage{amsthm}
 
-% --- Gói Hỗ trợ & Trình bày ---
-\usepackage{graphicx}        % Chèn hình ảnh
-\usepackage{float}           % Kiểm soát vị trí hình ảnh [H]
-\usepackage[left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry} % Căn lề
-
-% --- Gói "Cá nhân hóa" (Để tạo style vở ghi) ---
-\usepackage[dvipsnames, svgnames]{xcolor} % Gói màu sắc
-\usepackage[most]{tcolorbox} % Gói tạo các box ghi chú màu sắc
-
-\usepackage{hyperref}        % Tạo link PDF (PHẢI ĐỂ GẦN CUỐI)
-\hypersetup{
-    colorlinks=true,
-    linkcolor=RoyalBlue,
-    urlcolor=RoyalBlue,
-    citecolor=ForestGreen,
-    pdftitle={Ghi chú Đại số Tuyến tính},
-    pdfauthor={Tên của bạn},
-}
-
-% =========================================================
-% ĐỊNH NGHĨA MÔI TRƯỜNG KHOA HỌC (Định lý, Định nghĩa,...)
-% =========================================================
-% Đánh số theo Chương (ví dụ: Định lý 1.1, 1.2,...)
-
-\theoremstyle{definition} % Kiểu chữ đứng, in đậm tiêu đề
+% Thiet lap dinh ly co ban
+\theoremstyle{definition}
 \newtheorem{dinhnghia}{Định nghĩa}[chapter]
-\newtheorem{vidu}{Ví dụ}[chapter]
-
-\theoremstyle{plain}      % Kiểu chữ nghiêng, in đậm tiêu đề
-\newtheorem{dinhly}{Định lý}[chapter]
-\newtheorem{menhde}{Mệnh đề}[chapter]
-\newtheorem{hequa}{Hệ quả}[chapter]
-
-\theoremstyle{remark}     % Kiểu chữ đứng, tiêu đề nghiêng
-\newtheorem{chungminh}{Chứng minh}
-\newtheorem{ghichu}{Ghi chú}[chapter]
-
-
-% =========================================================
-% ĐỊNH NGHĨA MÔI TRƯỜNG CÁ NHÂN (Dùng tcolorbox)
-% =========================================================
-
-% Box "Lưu ý cá nhân" - Phong cách vở ghi
-\newtcolorbox{note}{
-    colback=LightGoldenrodYellow!20, % Màu nền
-    colframe=Goldenrod!80,           % Màu viền
-    fonttitle=\bfseries,
-    title=💡 Lưu ý cá nhân
-}
-
-% Box "Cảnh báo Lỗi sai thường gặp"
-\newtcolorbox{warning}{
-    colback=Red!10,
-    colframe=Red!75!Black,
-    fonttitle=\bfseries,
-    title=🔥 Lỗi sai thường gặp
-}
-
-% Box "Tóm tắt chương"
-\newtcolorbox{summary}{
-    colback=RoyalBlue!10,
-    colframe=RoyalBlue!75!Black,
-    fonttitle=\bfseries,
-    title=🔑 Tóm tắt cốt lõi
-}
