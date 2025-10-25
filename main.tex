@@ -1,16 +1,74 @@
 % =========================================================
-% MAIN TỐI GIẢN (Để kiểm tra)
+% TÊN FILE: main.tex
+% CHỨC NĂNG: File chính với Trang Bìa Tùy Chỉnh (DA SUA LOI)
 % =========================================================
+
 \documentclass[12pt, a4paper, oneside]{book}
 
-% Goi file thiet lap toi gian
+% Goi file thiet lap
 \input{preamble.tex}
+
+% --- Thong tin cho metadata cua file PDF ---
+\title{LINEAR ALGEBRA}
+\author{Nguyen Duc Tuan}
 
 % --- Bat dau tai lieu ---
 \begin{document}
 
-% Goi file chuong 1 toi gian
-% (Giả định thư mục của bạn là "chapters" chữ thường)
+% --- PHAN MO DAU ---
+\frontmatter 
+
+% --- BAT DAU TRANG BIA TUY CHINH ---
+\begin{titlepage}
+    \centering % Can giua tat ca noi dung
+    
+    % --- Logo Truong (Tuy chon) ---
+    % (Dam bao thu muc la "images" chu thuong)
+    % \includegraphics[width=0.25\textwidth]{images/logo-hoc-vien-ky-thuat-quan-su.jpg}
+    % \vspace{1cm} % Khoang cach sau logo
+
+    % --- Ten Truong (VIET KHONG DAU HOAC TIENG ANH) ---
+    {\large Le Quy Don Technical University}
+    \vspace{0.25cm}
+    {\large Faculty of Computer Science}
+    
+    \vfill % Day noi dung xuong giua trang
+    
+    % --- Ten Sach ---
+    {\Huge \bfseries LINEAR ALGEBRA}
+    \vspace{0.5cm}
+    {\Large \itshape My linear algebra notebook}
+    \vspace{1cm}
+    {\large Version 1.0} % Phien ban
+    
+    \vfill % Day noi dung xuong phia duoi
+    
+    % --- Tac gia & Thong tin ---
+    {\Large \bfseries Author: Nguyen Duc Tuan}
+    \vspace{0.5cm}
+    
+    \begin{tabular}{l l}
+        \bfseries Major: & Computer Science - Artificial Intelligence \\
+        \bfseries School: & Le Quy Don Technical University \\
+        \bfseries Email: & nguyenductuan07102007@gmail.com \\
+    \end{tabular}
+    
+    \vspace{1cm}
+    
+    % --- Ngay thang ---
+    {\large \today}
+
+\end{titlepage}
+% --- KET THUC TRANG BIA TUY CHINH ---
+
+% --- Trang Muc Luc ---
+\tableofcontents 
+
+% --- PHAN NOI DUNG CHINH ---
+\mainmatter 
+
+% Goi file chuong 1 vao
+% (Dam bao ten thu muc la "chapters" chu thuong)
 \input{chapters/chuong_01_KhongGianVector.tex} 
 
 % --- Ket thuc tai lieu ---
