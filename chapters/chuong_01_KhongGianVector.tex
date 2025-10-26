@@ -2,21 +2,68 @@
 % CHUONG 1 TỐI GIẢN (Để kiểm tra)
 % =========================================================
 
-\chapter{Chương 1: Kiểm tra Biên dịch}
+\chapter{Chương 1: Định thức của ma trận}
 
-\section{Đây là một mục kiểm tra}
+\section{Định nghĩa chính tắc (Công thức Leibniz)}
 
-Nội dung này được viết để kiểm tra xem GitHub Actions
-có chạy được hay không. Nó không chứa bất kỳ 
-ky tu Unicode, emoji, hay dau cach la nao.
+Đây là định nghĩa tổng quát và cơ bản nhất của định thức.
 
-\begin{dinhnghia}
-Đây là một định nghĩa thử nghiệm.
-\end{dinhnghia}
+Cho $A$ là một ma trận vuông cấp $n \times n$, với các phần tử được ký hiệu là $a_{ij}$ (phần tử ở hàng $i$, cột $j$).
+$$ A = \begin{pmatrix}
+a_{11} & a_{12} & \cdots & a_{1n} \\
+a_{21} & a_{22} & \cdots & a_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{n1} & a_{n2} & \cdots & a_{nn}
+\end{pmatrix} $$
+Định thức của $A$, ký hiệu là $\det(A)$ hoặc $|A|$, được định nghĩa bằng \textbf{công thức Leibniz} như sau:
 
-Đây là một công thức toán học cơ bản:
-\[
-A = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}
-\]
+$$ \det(A) = \sum_{\sigma \in S_n} \text{sgn}(\sigma) \prod_{i=1}^{n} a_{i, \sigma(i)} $$
 
-Kết thúc kiểm tra.
+\subsection*{Giải thích các thành phần}
+\begin{itemize}
+    \item \textbf{$S_n$}: Là tập hợp tất cả các \textbf{hoán vị} $\sigma$ của $n$ số nguyên $\{1, 2, \dots, n\}$. Một hoán vị $\sigma$ là một cách sắp xếp lại thứ tự của các số này. Ví dụ, nếu $n=3$, một hoán vị có thể là $\sigma = (2, 3, 1)$, nghĩa là $\sigma(1)=2$, $\sigma(2)=3$, và $\sigma(3)=1$.
+    
+    \item \textbf{$\text{sgn}(\sigma)$}: Là \textbf{dấu của hoán vị} $\sigma$ (signum).
+    \begin{itemize}
+        \item $\text{sgn}(\sigma) = +1$ nếu $\sigma$ là một \textbf{hoán vị chẵn} (có thể thu được bằng một số chẵn các phép tráo đổi 2 phần tử).
+        \item $\text{sgn}(\sigma) = -1$ nếu $\sigma$ là một \textbf{hoán vị lẻ} (có thể thu được bằng một số lẻ các phép tráo đổi 2 phần tử).
+    \end{itemize}
+    
+    \item \textbf{$\prod_{i=1}^{n} a_{i, \sigma(i)}$}: Là tích của $n$ phần tử của ma trận, được lấy sao cho: từ hàng 1 ta lấy phần tử ở cột $\sigma(1)$, từ hàng 2 ta lấy phần tử ở cột $\sigma(2)$, và cứ thế đến hàng $n$ ta lấy phần tử ở cột $\sigma(n)$. Điều này đảm bảo mỗi hàng và mỗi cột chỉ được đại diện đúng một lần trong mỗi tích.
+\end{itemize}
+
+Nói một cách dễ hiểu, định thức là tổng của tất cả $n!$ (n giai thừa) tích có thể có, mỗi tích được tạo thành từ $n$ phần tử (mỗi hàng và mỗi cột chỉ lấy một phần tử), với dấu cộng hoặc trừ được quyết định bởi tính chẵn/lẻ của hoán vị các chỉ số cột.
+
+\section{Định nghĩa đệ quy (Khai triển Laplace)}
+
+Đây là một định nghĩa mang tính xây dựng và thường được dùng để tính toán định thức trong thực tế.
+
+\subsection*{Trường hợp cơ sở}
+Nếu $A$ là ma trận $1 \times 1$, $A = [a_{11}]$, thì $\det(A) = a_{11}$.
+
+\subsection*{Bước đệ quy (cho $n > 1$)}
+Để định nghĩa định thức của ma trận $A$ cấp $n \times n$, ta cần hai khái niệm:
+
+\begin{enumerate}
+    \item \textbf{Ma trận con (Minor)}: \textbf{Ma trận con} $A_{ij}$ (đôi khi ký hiệu là $M_{ij}$) là ma trận cấp $(n-1) \times (n-1)$ thu được bằng cách \textbf{xóa hàng $i$ và cột $j$} của ma trận $A$.
+    
+    \item \textbf{Phần bù đại số (Cofactor)}: \textbf{Phần bù đại số} $C_{ij}$ của phần tử $a_{ij}$ được định nghĩa là:
+    $$ C_{ij} = (-1)^{i+j} \det(A_{ij}) $$
+    Dấu $(-1)^{i+j}$ tạo ra một "bàn cờ" dấu:
+    $$ \begin{pmatrix}
+    + & - & + & \cdots \\
+    - & + & - & \cdots \\
+    + & - & + & \cdots \\
+    \vdots & \vdots & \vdots & \ddots
+    \end{pmatrix} $$
+\end{enumerate}
+
+Với các khái niệm trên, định thức của $A$ có thể được tính bằng cách \textbf{khai triển theo một hàng $i$ bất kỳ} (từ $1$ đến $n$):
+$$ \det(A) = \sum_{j=1}^{n} a_{ij} C_{ij} = a_{i1}C_{i1} + a_{i2}C_{i2} + \dots + a_{in}C_{in} $$
+
+Hoặc, \textbf{khai triển theo một cột $j$ bất kỳ} (từ $1$ đến $n$):
+$$ \det(A) = \sum_{i=1}^{n} a_{ij} C_{ij} = a_{1j}C_{1j} + a_{2j}C_{2j} + \dots + a_{nj}C_{nj} $$
+
+Giá trị của định thức là duy nhất, không phụ thuộc vào hàng hay cột nào được chọn để khai triển. Định nghĩa này mang tính đệ quy vì $\det(A)$ (cấp $n$) được định nghĩa thông qua các $\det(A_{ij})$ (cấp $n-1$).
+
+\end{document}
