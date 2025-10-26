@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1761472758.7656 "d:/GitHub/Linear-Algebra/main.tex" "main.pdf" "main" 1761472759.50309 0
+["pdflatex"] 1761474645.65459 "d:/GitHub/Linear-Algebra/main.tex" "main.pdf" "main" 1761474646.38748 0
   "C:/Users/HP/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1760880607 88371 b965f57369ed322039596060d18f4416 ""
   "C:/Users/HP/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1759279942 14064 d151baad966180e2b09c1ab8b4e0b983 ""
   "C:/Users/HP/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1759279800 13285514 48f532b65ff976695605181e0ccafdff ""
@@ -80,13 +80,13 @@
   "C:/Users/HP/AppData/Local/Programs/MiKTeX/tex/latex/vntex/t5cmr.fd" 1368738347 1333 ab1c3d512aa3d88df568aed3641db58f ""
   "C:/Users/HP/AppData/Local/Programs/MiKTeX/tex/latex/vntex/t5enc.def" 1368738347 21986 ccb3b8f7cc27fbd61b3daabbbb82ad3f ""
   "C:/Users/HP/AppData/Local/Programs/MiKTeX/tex/latex/vntex/t5enc.dfu" 1368738347 13949 387dd4fa58aea5f873839c93430fffed ""
-  "chapters/chuong_01_KhongGianVector.tex" 1761469339 4615 4ef1cd9aca430b86f39f80376aff7240 ""
-  "d:/GitHub/Linear-Algebra/main.tex" 1761472758 2027 41bfbd2ce38f4b59913530a37e817f37 ""
+  "chapters/chuong_01_KhongGianVector.tex" 1761474644 4603 aec850d680f6309324fc9dddf41ee458 ""
+  "d:/GitHub/Linear-Algebra/main.tex" 1761474614 2118 42f27dba40780fb787c1156a761a8da1 ""
   "images/InICT.png" 1761472486 53927 5237503047b4b7168d674540db4e8bb3 ""
   "images/logo-hoc-vien-ky-thuat-quan-su.jpg" 1761472739 32566 1a35140b3361b4715516a711fa2252bd ""
-  "main.aux" 1761472759 656 08710b1a4036aa26745b5c4c15681810 "pdflatex"
-  "main.tex" 1761472758 2027 41bfbd2ce38f4b59913530a37e817f37 ""
-  "main.toc" 1761472759 317 a4acb8ae1547ecf55f1ce0e433399ce4 "pdflatex"
+  "main.aux" 1761474646 644 5363c85e39f12997216b3333a2dadde7 "pdflatex"
+  "main.tex" 1761474614 2118 42f27dba40780fb787c1156a761a8da1 ""
+  "main.toc" 1761474646 305 4a9df1a068ce1a5ae0af287527275401 "pdflatex"
   "preamble.tex" 1761379755 635 6f70df5edb34286f4481ce42976c02cd ""
   (generated)
   "main.aux"
