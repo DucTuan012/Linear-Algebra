@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1761669594.1462 "d:/GitHub/Linear-Algebra/main.tex" "main.pdf" "main" 1761669595.49405 0
+["pdflatex"] 1761669966.67158 "d:/GitHub/Linear-Algebra/main.tex" "main.pdf" "main" 1761669967.79426 0
   "C:/Users/HP/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1760880607 88371 b965f57369ed322039596060d18f4416 ""
   "C:/Users/HP/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1759279942 14064 d151baad966180e2b09c1ab8b4e0b983 ""
   "C:/Users/HP/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1759279800 13285514 48f532b65ff976695605181e0ccafdff ""
@@ -81,14 +81,13 @@
   "C:/Users/HP/AppData/Local/Programs/MiKTeX/tex/latex/vntex/t5cmr.fd" 1368738347 1333 ab1c3d512aa3d88df568aed3641db58f ""
   "C:/Users/HP/AppData/Local/Programs/MiKTeX/tex/latex/vntex/t5enc.def" 1368738347 21986 ccb3b8f7cc27fbd61b3daabbbb82ad3f ""
   "C:/Users/HP/AppData/Local/Programs/MiKTeX/tex/latex/vntex/t5enc.dfu" 1368738347 13949 387dd4fa58aea5f873839c93430fffed ""
-  "chapters/chuong_01_KhongGianVector.tex" 1761474644 4603 aec850d680f6309324fc9dddf41ee458 ""
-  "chapters/chuong_02_matran.tex" 1761669591 2313 226160259a9bb0ebee73420329e06c39 ""
-  "d:/GitHub/Linear-Algebra/main.tex" 1761669562 1940 52dffe6703e09eb19cb56a0f2199dedf ""
+  "chapters/chuong_02_ma_tran.tex" 1761669940 6960 8417fc193f46379125f748d5df0c55ce ""
+  "d:/GitHub/Linear-Algebra/main.tex" 1761669964 1815 059bcfefb0877281f43217888c9d979e ""
   "images/InICT.png" 1761472486 53927 5237503047b4b7168d674540db4e8bb3 ""
   "images/logo-hoc-vien-ky-thuat-quan-su.jpg" 1761472739 32566 1a35140b3361b4715516a711fa2252bd ""
-  "main.aux" 1761669595 644 a87bb861e01fc923857449999ebd597d "pdflatex"
-  "main.tex" 1761669562 1940 52dffe6703e09eb19cb56a0f2199dedf ""
-  "main.toc" 1761669595 305 d73492a5e9d21f0fa161ed2b28ffe9cd "pdflatex"
+  "main.aux" 1761669967 755 afe687c64c088229d0fccd63718b4a30 "pdflatex"
+  "main.tex" 1761669964 1815 059bcfefb0877281f43217888c9d979e ""
+  "main.toc" 1761669967 375 388c0d34073825f0255df22e516f1c1a "pdflatex"
   "preamble.tex" 1761379755 635 6f70df5edb34286f4481ce42976c02cd ""
   (generated)
   "main.aux"
