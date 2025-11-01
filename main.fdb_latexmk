@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1761670307.41906 "d:/GitHub/Linear-Algebra/main.tex" "main.pdf" "main" 1761670308.66038 0
-  "C:/Users/HP/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1760880607 88371 b965f57369ed322039596060d18f4416 ""
+["pdflatex"] 1762013079.97202 "d:/GitHub/Linear-Algebra/main.tex" "main.pdf" "main" 1762013080.75359 0
+  "C:/Users/HP/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1761915775 88371 b965f57369ed322039596060d18f4416 ""
   "C:/Users/HP/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1759279942 14064 d151baad966180e2b09c1ab8b4e0b983 ""
   "C:/Users/HP/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1759279800 13285514 48f532b65ff976695605181e0ccafdff ""
   "C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm1200.tfm" 993062126 3152 4850ff0163852b7fab34bd55e1197f28 ""
@@ -39,7 +39,6 @@
   "C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1247596667 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
-  "C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1247596673 34694 870c211f62cb72718a00e353f14f254d ""
   "C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnbx12.pfb" 1644004041 41089 cd085a6112214f1ec9535fe0d1ee127f ""
   "C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr12.pfb" 1644004041 40319 02110ade360715fbba33c66db50ef607 ""
   "C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnsl12.pfb" 1644004041 42576 172b855dbcc47763f102cd5ca5dbbc16 ""
@@ -81,13 +80,13 @@
   "C:/Users/HP/AppData/Local/Programs/MiKTeX/tex/latex/vntex/t5cmr.fd" 1368738347 1333 ab1c3d512aa3d88df568aed3641db58f ""
   "C:/Users/HP/AppData/Local/Programs/MiKTeX/tex/latex/vntex/t5enc.def" 1368738347 21986 ccb3b8f7cc27fbd61b3daabbbb82ad3f ""
   "C:/Users/HP/AppData/Local/Programs/MiKTeX/tex/latex/vntex/t5enc.dfu" 1368738347 13949 387dd4fa58aea5f873839c93430fffed ""
-  "chapters/chuong_02_ma_tran.tex" 1761670306 6978 feb039053cb707a214d483716539ecf2 ""
-  "d:/GitHub/Linear-Algebra/main.tex" 1761669964 1815 059bcfefb0877281f43217888c9d979e ""
+  "chapters/chuong_02_ma_tran.tex" 1762013078 4700 0de1c45a8f6154743a521a13bdee7ee4 ""
+  "d:/GitHub/Linear-Algebra/main.tex" 1761670309 1815 059bcfefb0877281f43217888c9d979e ""
   "images/InICT.png" 1761472486 53927 5237503047b4b7168d674540db4e8bb3 ""
   "images/logo-hoc-vien-ky-thuat-quan-su.jpg" 1761472739 32566 1a35140b3361b4715516a711fa2252bd ""
-  "main.aux" 1761670308 755 0b01161655f1050ad377ee7a8510a7d7 "pdflatex"
-  "main.tex" 1761669964 1815 059bcfefb0877281f43217888c9d979e ""
-  "main.toc" 1761670308 375 0ee143aaaa12e1869a103d3111412e7c "pdflatex"
+  "main.aux" 1762013080 755 03fd8028ec66d276a17a3b8ef5f5552b "pdflatex"
+  "main.tex" 1761670309 1815 059bcfefb0877281f43217888c9d979e ""
+  "main.toc" 1762013080 375 388c0d34073825f0255df22e516f1c1a "pdflatex"
   "preamble.tex" 1761379755 635 6f70df5edb34286f4481ce42976c02cd ""
   (generated)
   "main.aux"

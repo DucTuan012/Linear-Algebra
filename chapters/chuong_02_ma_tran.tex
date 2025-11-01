@@ -6,45 +6,6 @@
 
 \section{Các khái niệm cơ bản về ma trận}
 \textbf{Định nghĩa Ma trận (Definition of a Matrix)}
-
-Cho $K$ là một \textbf{trường} (field) bất kỳ. Thông thường, $K$ có thể là trường số thực $\mathbb{R}$ hoặc trường số phức $\mathbb{C}$.
-
-Một \textbf{ma trận} (matrix) $A$ cấp (hoặc kích thước) $m \times n$ trên trường $K$ là một bảng hình chữ nhật (rectangular array) gồm $m \cdot n$ phần tử (elements) của $K$, được sắp xếp thành $m$ hàng (rows) và $n$ cột (columns).
-
-Ma trận $A$ được biểu diễn tổng quát dưới dạng:
-
-$$
-A =
-\begin{pmatrix}
-a_{11} & a_{12} & \cdots & a_{1n} \\
-a_{21} & a_{22} & \cdots & a_{2n} \\
-\vdots & \vdots & \ddots & \vdots \\
-a_{m1} & a_{m2} & \cdots & a_{mn}
-\end{pmatrix}
-$$
-
-Trong đó:
-
-$m$ và $n$ là các số nguyên dương ($m, n \in \mathbb{N}^*$). $m$ được gọi là \textbf{số hàng} và $n$ được gọi là \textbf{số cột}. $a_{ij} \in K$ là phần tử của ma trận nằm tại vị trí giao của **hàng thứ $i$** (với $1 \le i \le m$) và cột thứ $j$ (với $1 \le j \le n$). Chỉ số $i$ là chỉ số hàng và chỉ số $j$ là chỉ số cột.
-
-\textbf{Ký hiệu (Notation)}:
-
-
-1.  Ma trận $A$ thường được ký hiệu rút gọn là $A = [a_{ij}]_{m \times n}$, hoặc $A = (a_{ij})_{m \times n}$. Nếu kích thước $m \times n$ đã được xác định rõ trong ngữ cảnh, có thể viết đơn giản là $A = [a_{ij}]$.
-
-
-2.  Tập hợp tất cả các ma trận cấp $m \times n$ với các phần tử thuộc trường $K$ được ký hiệu là $M_{m \times n}(K)$. Do đó, ta có thể viết $A \in M_{m \times n}(K)$.
-
-
-\textbf{Các trường hợp đặc biệt}:
-
-Ma trận vuông (Square matrix):Khi $m = n$, $A$ được gọi là ma trận vuông cấp $n$. Tập hợp các ma trận vuông cấp $n$ trên $K$ được ký hiệu là $M_n(K)$. Các phần tử $a_{11}, a_{22}, \dots, a_{nn}$ (tức là $a_{ii}$) tạo thành **đường chéo chính** (main diagonal) của ma trận.
-
-Vector cột (Column vector): Khi $n = 1$ (ma trận cấp $m \times 1$), $A$ được gọi là một vector cột.
-
-Vector hàng (Row vector): Khi $m = 1$ (ma trận cấp $1 \times n$), $A$ được gọi là một vector hàng.
-
-
 \section{Định nghĩa chính tắc (Công thức Leibniz)}
 
 Đây là định nghĩa tổng quát và cơ bản nhất của định thức.
@@ -108,3 +69,4 @@ $$ \det(A) = \sum_{i=1}^{n} a_{ij} C_{ij} = a_{1j}C_{1j} + a_{2j}C_{2j} + \dots 
 Giá trị của định thức là duy nhất, không phụ thuộc vào hàng hay cột nào được chọn để khai triển. Định nghĩa này mang tính đệ quy vì $\det(A)$ (cấp $n$) được định nghĩa thông qua các $\det(A_{ij})$ (cấp $n-1$).
 
 \end{document}
+
